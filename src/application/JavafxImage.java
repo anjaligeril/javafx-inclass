@@ -1,6 +1,7 @@
 package application;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -25,7 +26,7 @@ public class JavafxImage extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();*/
 		
-		Image img=new Image("image/img.jpg");
+		/*Image img=new Image("image/img.jpg");
 		ImageView imgvw=new ImageView(img);
 		imgvw.setFitHeight(550);
 		imgvw.setFitWidth(550);
@@ -35,24 +36,29 @@ public class JavafxImage extends Application {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setTitle("image in javafx");
 		primaryStage.setScene(scene);
-		primaryStage.show();
+		primaryStage.show();*/
 		
 		
 		
 		//HBox is a kind of pane .it arranges the nodes one after the another horizontally
 		
 	
-		/* Image img=new Image("https://cdn.atwilltech.com/flowerdatabase/c/celebrate-the-day-fresh-flowers-VA01607.425.jpg");
+		 Image img=new Image("https://www.futurity.org/wp/wp-content/uploads/2018/04/pink-flowers-against-green_1600.jpg");
 		ImageView imgvw=new ImageView(img);
+		imgvw.setFitHeight(500);
+		imgvw.setFitWidth(500);
 		Image img1=new Image("https://res.cloudinary.com/prestige-gifting/image/fetch/fl_progressive,q_95,e_sharpen:50,w_480/e_saturation:05/https://www.prestigeflowers.co.uk/images/NF1018.jpg");
 		ImageView imgvw1=new ImageView(img1);
-		
-		HBox pane=new HBox();
+		imgvw1.setFitHeight(500);
+		imgvw1.setFitWidth(500);
+		imgvw1.setRotate(90);
+		HBox pane=new HBox(10);
+		pane.setPadding(new Insets(3,3,3,3));
 		pane.getChildren().addAll(imgvw,imgvw1);
 		Scene scene=new Scene(pane,1000,1000);
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		primaryStage.setScene(scene);
-		primaryStage.show(); */
+		primaryStage.show(); 
 		
 		//VBox is a kind of pane .it arranges the nodes one after the another vertically
 		
